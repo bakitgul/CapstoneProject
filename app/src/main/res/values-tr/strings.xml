@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CapstoneProject</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_empty_error">Lütfen kullanıcı adını giriniz.</string>
+    <string name="email_invalid_error">Lütfen geçerli bir kullanıcı adı giriniz.</string>
+    <string name="email_invalid_password">Şifreniz 8 karakterden fazla olmalıdır.</string>
+    <string name="login_success_message">Dünyamıza Hoşgeldiniz</string>
+    <string name="singup_success_message">Registration Successful</string>
+    <string name="or_sing_up"><u>veya kayıt ol</u></string>
+    <string name="sing_up_page">Kayıt Sayfası</string>
+    <string name="email">Email</string>
+    <string name="password">Şifre</string>
+    <string name="name_surname">Ad Soyad</string>
+    <string name="telephone">Telefon</string>
+    <string name="sing_up">Kayıt</string>
+    <string name="promotion">Promosyon</string>
+    <string name="your_profile">Profil</string>
+    <string name="products">Ürünler</string>
+    <string name="add_to_basket">Sepete Ekle</string>
+    <string name="miyuki_design_shop">Miyuki Tasarım Dükkanı</string>
+    <string name="user_name_email_address">Kullanıcı adı/ Email Adres</string>
+    <string name="log_in">Giriş Yap</string>
+    <string name="sing_up_login">Kayıt Ol</string>
+    <string name="your_basket">Sepetin</string>
+    <string name="basket_b">Sepet</string>
+    <string name="profile_b">profil</string>
+</resources>

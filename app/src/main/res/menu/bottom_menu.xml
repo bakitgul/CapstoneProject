@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/productsMainPageFragment"
+        android:icon="@drawable/products"
+        android:title="@string/products"/>
+    <item
+        android:id="@+id/promotionFragment"
+        android:icon="@drawable/promotion"
+        android:title="@string/promotion" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/person"
+        android:title="@string/profile_b" />
+    <item
+        android:id="@+id/basketFragment"
+        android:icon="@drawable/basket"
+        android:title="@string/basket_b" />
+</menu>

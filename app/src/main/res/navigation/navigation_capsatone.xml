@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_capsatone"
+    app:startDestination="@id/productsMainPageFragment">
+
+    <fragment
+        android:id="@+id/productsMainPageFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.ProductsMainPageFragment"
+        android:label="fragment_products_main_page"
+        tools:layout="@layout/fragment_products_main_page" >
+        <action
+            android:id="@+id/productsToDetailAction"
+            app:destination="@id/productsDetailPageFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/productsToBasket"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productsDetailPageFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.ProductsDetailPageFragment"
+        android:label="ProductsDetailPageFragment"
+        tools:layout="@layout/fragment_products_detail_page" >
+        <argument
+            android:name="objectProducts"
+            app:argType="com.bakitgulbirlik.capstoneproject.entity.Products" />
+        <action
+            android:id="@+id/detailToBasket"
+            app:destination="@id/basketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basketFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.BasketFragment"
+        android:label="fragment_basket"
+        tools:layout="@layout/fragment_basket" >
+        <argument
+            android:name="objectBasket"
+            app:argType="com.bakitgulbirlik.capstoneproject.entity.Products" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/promotionFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.PromotionFragment"
+        android:label="fragment_promotion"
+        tools:layout="@layout/fragment_promotion" >
+        <action
+            android:id="@+id/promotionToDetailPromotion"
+            app:destination="@id/promotionToDetail"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/promotionToDetail"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.PromotionDetailFragment"
+        android:label="PromotionDetailFragment"
+        tools:layout="@layout/fragment_promotion_detail">
+        <action
+            android:id="@+id/promotionDetailToBasket"
+            app:destination="@id/basketFragment" />
+        <argument
+            android:name="objPromotion"
+            app:argType="com.bakitgulbirlik.capstoneproject.entity.Products" />
+    </fragment>
+</navigation>

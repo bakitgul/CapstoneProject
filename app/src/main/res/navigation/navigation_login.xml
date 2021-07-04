@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_login"
+    app:startDestination="@id/logInFragment">
+
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.LogInFragment"
+        android:label="LogInFragment"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/loginToSignUp"
+            app:destination="@id/singupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singupFragment"
+        android:name="com.bakitgulbirlik.capstoneproject.fragments.SingupFragment"
+        android:label="SingupFragment"
+        tools:layout="@layout/fragment_singup"/>
+</navigation>
